@@ -1,0 +1,6 @@
+# Sample IOCs (one per line). Lines starting with # are ignored.
+8.8.8.8
+203.0.113.77
+micros0ft-security.com
+44d88612fea8a8f36de82e1278abb02f
+http://198.51.100.44/verify/login.php

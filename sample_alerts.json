@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ALRT-1001",
+    "timestamp": "2026-07-21T09:14:07Z",
+    "rule": "PowerShell Encoded Command",
+    "severity": "high",
+    "host": "WKS-1042",
+    "user": "jsmith",
+    "asset_criticality": "medium",
+    "technique": "T1059.001",
+    "entities": { "ips": ["198.51.100.44"], "hashes": [], "domains": ["node12.ru"] },
+    "raw": "winword.exe -> powershell.exe -enc <base64>"
+  },
+  {
+    "id": "ALRT-1002",
+    "timestamp": "2026-07-21T09:22:31Z",
+    "rule": "AWS Root Console Login",
+    "severity": "high",
+    "host": "aws-account-4417",
+    "user": "root",
+    "asset_criticality": "crown-jewel",
+    "technique": "T1078.004",
+    "entities": { "ips": ["203.0.113.77"], "hashes": [], "domains": [] },
+    "raw": "ConsoleLogin Success, MFAUsed=No, then CreateAccessKey"
+  },
+  {
+    "id": "ALRT-1003",
+    "timestamp": "2026-07-21T09:31:10Z",
+    "rule": "Shadow Copy Deletion",
+    "severity": "critical",
+    "host": "SRV-FILE-07",
+    "user": "SYSTEM",
+    "asset_criticality": "high",
+    "technique": "T1490",
+    "entities": { "ips": [], "hashes": ["c1d2..."], "domains": [] },
+    "raw": "vssadmin.exe delete shadows /all /quiet"
+  },
+  {
+    "id": "ALRT-1004",
+    "timestamp": "2026-07-21T08:59:02Z",
+    "rule": "Failed Logon Brute Force",
+    "severity": "medium",
+    "host": "SRV-DC-02",
+    "user": "svc_backup",
+    "asset_criticality": "high",
+    "technique": "T1110",
+    "entities": { "ips": ["10.0.5.88"], "hashes": [], "domains": [] },
+    "raw": "47x 4625 then 1x 4624 success"
+  },
+  {
+    "id": "ALRT-1005",
+    "timestamp": "2026-07-21T07:45:55Z",
+    "rule": "Registry Run Key Persistence",
+    "severity": "medium",
+    "host": "WKS-0781",
+    "user": "adunn",
+    "asset_criticality": "low",
+    "technique": "T1547.001",
+    "entities": { "ips": [], "hashes": [], "domains": [] },
+    "raw": "Set-Value HKCU\\...\\Run\\Updater -> %AppData%\\u.exe"
+  },
+  {
+    "id": "ALRT-1006",
+    "timestamp": "2026-07-21T06:12:40Z",
+    "rule": "Scheduled Task Creation",
+    "severity": "low",
+    "host": "WKS-0333",
+    "user": "helpdesk",
+    "asset_criticality": "low",
+    "technique": "T1053.005",
+    "entities": { "ips": [], "hashes": [], "domains": [] },
+    "raw": "schtasks.exe /create /sc onlogon /tn Updater (during patch window)"
+  }
+]

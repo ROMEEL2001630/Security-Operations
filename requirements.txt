@@ -1,0 +1,2 @@
+# Standard library only for offline use. requests enables live lookups.
+requests>=2.31.0

@@ -1,0 +1,43 @@
+Received: from mail.delivery-node12.ru (mail.delivery-node12.ru [203.0.113.77])
+	by mx.corp-example.com with ESMTP id 4A1B2C3D
+	for <jsmith@corp-example.com>; Tue, 21 Jul 2026 09:14:07 +0000
+Received: from user-pc (unknown [198.51.100.44])
+	by mail.delivery-node12.ru with SMTP; Tue, 21 Jul 2026 09:14:05 +0000
+Authentication-Results: mx.corp-example.com;
+	spf=fail (sender IP is 203.0.113.77) smtp.mailfrom=microsoft-support.ru;
+	dkim=none;
+	dmarc=fail (p=reject) header.from=micros0ft-security.com
+From: "Microsoft Account Team" <security@micros0ft-security.com>
+Reply-To: <recover@mail.delivery-node12.ru>
+To: <jsmith@corp-example.com>
+Subject: Unusual sign-in activity - your account will be suspended
+Date: Tue, 21 Jul 2026 09:14:05 +0000
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="BOUND1234"
+
+--BOUND1234
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear User,
+
+We detected an unusual sign-in to your account. For your security, your
+account will be suspended within 24 hours unless you verify your account.
+
+Please confirm your identity immediately:
+http://198.51.100.44/verify/login.php?id=jsmith
+
+You may also review the attached security report.
+
+Microsoft Account Team
+
+--BOUND1234
+Content-Type: application/octet-stream; name="Security_Report.html.exe"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Security_Report.html.exe"
+
+TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4g
+aW4gRE9TIG1vZGUuDQ0KJAAAAAAAAAA=
+
+--BOUND1234--
